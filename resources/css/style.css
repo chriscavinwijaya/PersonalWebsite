@@ -50,7 +50,7 @@ header {
 .background-image {
   width: 100%;
   max-height: 1100px;
-  background-image: url("../images/Background1.png");
+  background-image: url("../images/wallpaper.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   padding-top: 50.5%;
@@ -82,7 +82,7 @@ nav {
 }
 
 nav .name {
-  width: 15%;
+  width: 20%;
   padding: 0 5%;
   margin: auto;
 }
@@ -90,14 +90,19 @@ nav .name {
 nav .name h1 {
   text-align: center;
   font-size: 20px;
+  color: gold;
 }
 
 .nav .button {
   width: 25%;
   height: auto;
   text-align: center;
-  outline: 0.5px solid black;
+  outline: 0.5px solid white;
   margin: auto;
+}
+
+.nav a {
+  color: gold;
 }
 
 .button .text {
@@ -184,7 +189,6 @@ nav .name h1 {
   color: white;
   background-color: black;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .quote-banner h2 {
@@ -203,31 +207,78 @@ nav .name h1 {
 
 /*Galleria Section */
 #Galleria {
-  padding-top: 40px;
-  height: 1000px;
+  padding: 40px 0;
+  height: auto;
+  background-color: black;
+  outline: 1px solid white;
+  padding-bottom: 115px;
+}
+
+#Galleria .main-container {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  background-color: black;
+}
+
+.main-container .Galleria-Text {
+  padding: 40px 0;
+  margin: 15px auto;
+  font-style: italic;
+}
+
+.Galleria-Text h2 {
+  color: white;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+#Galleria .button-container {
+  width: 100%;
+  height: auto;
+  padding: 250px 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #Galleria .buttons {
-  max-width: 250px;
+  min-width: 200px;
 }
 
-a .galleria-button {
-  height: 250px;
-  width: 250px;
+#Galleria .button {
+  min-height: 200px;
+  min-width: 200px;
   border-radius: 100%;
-  background-image: url("../images/Galleria-Logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: white;
 }
 
-.galleria-button:hover {
+#Galleria .button:hover {
   background-color: orange;
   transition: 0.8s;
   transition-timing-function: ease-in-out;
 }
 
+.story .button {
+  background-image: url("../images/Galleria-Logo.png");
+}
 
+.galleria .button {
+  background-image: url("../images/Galleria-Logo.png");
+}
+
+.video .button {
+  background-image: url("../images/Galleria-Logo.png");
+}
+
+.projects .button {
+  background-image: url("../images/Galleria-Logo.png");
+}
+
+.tbd .button {
+  background-image: url("../images/Galleria-Logo.png");
+}
 
 
 
@@ -236,6 +287,9 @@ a .galleria-button {
   padding-top: 40px;
   height: 1000px;
 }
+
+
+
 
 
 
@@ -256,6 +310,7 @@ footer {
 }
 
 footer p {
+  width: 100%;
   margin: 10px;
   padding-left: 1%;
 }
