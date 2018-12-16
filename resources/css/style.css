@@ -472,13 +472,14 @@ nav .name h1 {
 }
 
   /* Contact Hover */
+  .Instagram .Logo:hover {
+    background-color: violet;
+  }
+
   .LinkedIn .Logo:hover {
     background-color: #0E76A8;
   }
 
-  .Instagram .Logo:hover {
-    background-color: violet;
-  }
   .Logo:hover {
     transition: 0.8s;
     transition-timing-function: ease-in-out;
