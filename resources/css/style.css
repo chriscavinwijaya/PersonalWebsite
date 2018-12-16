@@ -404,7 +404,7 @@ nav .name h1 {
 
 /* Contact Section */
 #Contact {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding: 40px;
   padding-bottom: 0;
@@ -472,6 +472,10 @@ nav .name h1 {
 }
 
   /* Contact Hover */
+  .Email .Logo:hover {
+    background-color: yellow;
+  }
+
   .Instagram .Logo:hover {
     background-color: violet;
   }
