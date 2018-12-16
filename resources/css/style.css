@@ -311,7 +311,7 @@ nav .name h1 {
 /* Giving Section */
 #Giving {
   width: 100%;
-  height: 800px;
+  height: auto;
   padding: 40px 0;
 }
 
@@ -391,17 +391,36 @@ nav .name h1 {
   opacity: 1;
 }
 
+#Giving .quote-banner {
+  max-width: 100%;
+  margin-top: 100px;
+  padding: 25px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  border: 1px solid black;
+}
+
+
 /* Contact Section */
 #Contact {
-  height: 500px;
+  width: 100%;
+  height: auto;
   padding: 40px;
+  padding-bottom: 0;
   border: 3px dashed orange;
+  background-color: lightgray;
 }
 
 /*#Contact:hover {
   background-color: orange;
   transition: 2s;
 }*/
+
+#Contact .main-container {
+  background-color: lightgray;
+  flex-direction: column;
+}
 
 .Contact-Header {
   height: 50px;
@@ -410,6 +429,61 @@ nav .name h1 {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.contact-content {
+  margin: auto;
+  padding: 25px;
+}
+
+.contact-content .text {
+  font-size: 20px;
+}
+
+.social-media {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+.Logo {
+  width: 100px;
+  height: 100px;
+  opacity: 0.3;
+}
+
+.Email .Logo {
+  background-image: url("");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+}
+
+.LinkedIn .Logo {
+  background-image: url("../images/Linkedin-Logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Instagram .Logo {
+  background-image: url("../images/Instagram-Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+  /* Contact Hover */
+  .LinkedIn .Logo:hover {
+    background-color: #0E76A8;
+  }
+
+  .Instagram .Logo:hover {
+    background-color: violet;
+  }
+  .Logo:hover {
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+  }
 
 
 
