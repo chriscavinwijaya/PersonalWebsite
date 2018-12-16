@@ -406,21 +406,23 @@ nav .name h1 {
 #Contact {
   max-width: 100%;
   height: auto;
-  padding: 40px;
-  padding-bottom: 0;
   border: 3px dashed orange;
   background-color: lightgray;
+  color: white;
 }
 
-/*#Contact:hover {
-  background-color: orange;
-  transition: 2s;
-}*/
-
 #Contact .main-container {
+  width: 100%;
+  padding-top: 60px;
   background-color: lightgray;
   flex-direction: column;
 }
+  /* Contact Hover */
+  #Contact .main-container:hover {
+    background-color: gray;
+    transition: 1.3s;
+    transition-timing-function: ease-in-out;
+  }
 
 .Contact-Header {
   height: 50px;
@@ -437,6 +439,7 @@ nav .name h1 {
 
 .contact-content .text {
   font-size: 20px;
+  text-align: center;
 }
 
 .social-media {
@@ -447,17 +450,17 @@ nav .name h1 {
 }
 
 .Logo {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
+  margin: 30px;
   opacity: 0.3;
   border-radius: 20%;
 }
 
 .Email .Logo {
-  background-image: url("");
+  background-image: url("../images/Mail-Logo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  border: 1px solid black;
 }
 
 .LinkedIn .Logo {
@@ -474,7 +477,7 @@ nav .name h1 {
 
   /* Contact Hover */
   .Email .Logo:hover {
-    background-color: yellow;
+    background-color: #fff176;
   }
 
   .Instagram .Logo:hover {
@@ -493,7 +496,6 @@ nav .name h1 {
 
 
 
-
 /* Footer */
 footer {
   width: 100%;
@@ -505,6 +507,7 @@ footer {
 
 footer p {
   width: 100%;
+  font-size: 18px;
   margin: 10px;
   padding-left: 1%;
 }
