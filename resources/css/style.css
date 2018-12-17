@@ -286,7 +286,7 @@ nav .name h1 {
   }
 
 .story .button {
-  background-image: url("../images/Question-Logo.png");
+  background-image: url("../images/Story-Logo.png");
 }
 
 .galleria .button {
@@ -420,7 +420,7 @@ nav .name h1 {
   /* Contact Hover */
   #Contact .main-container:hover {
     background-color: gray;
-    transition: 1.3s;
+    transition: 1.2s;
     transition-timing-function: ease-in-out;
   }
 
