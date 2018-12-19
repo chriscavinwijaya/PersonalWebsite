@@ -113,15 +113,22 @@ nav .name h1 {
   font-size: 20px;
   font-weight: bold;
 }
+ /* Nav Hover */
+ .nav .button:hover {
+    background-color: orange;
+    color: white;
+    transition: 1s;
+  }
 
-.nav .button:hover {
-  background-color: orange;
-  color: white;
-  transition: 1s;
-}
+  .nav .border:hover {
+    border-bottom: 5px solid gold;
+    transition: 0.4s;
+  }
 
   /* Header Mobile */
+  @@media only screen and (max-width:480px) {
 
+  }
 
 
 /* Main Body */
@@ -199,14 +206,6 @@ nav .name h1 {
   font-size: 20px;
   font-style: italic;
 }
-
-
-
-
-
-
-
-
 
 
 /*Galleria Section */
@@ -467,15 +466,21 @@ nav .name h1 {
   background-repeat: no-repeat;
 }
 
-.LinkedIn .Logo {
-  background-image: url("../images/Linkedin-Logo.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .Instagram .Logo {
   background-image: url("../images/Instagram-Logo.png");
   background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Facebook .Logo {
+  background-image: url("../images/Facebook-Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.LinkedIn .Logo {
+  background-image: url("../images/Linkedin-Logo.png");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -486,6 +491,10 @@ nav .name h1 {
 
   .Instagram .Logo:hover {
     background-color: violet;
+  }
+
+  .Facebook .Logo:hover {
+    background-color: navy;
   }
 
   .LinkedIn .Logo:hover {
