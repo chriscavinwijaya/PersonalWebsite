@@ -126,7 +126,22 @@ nav .name h1 {
   }
 
   /* Header Mobile */
-  @@media only screen and (max-width:480px) {
+  @media only screen and (max-width:480px) {
+    .nav .button {
+      display: none;
+    }
+
+    .nav .name {
+      width: 100%;
+      background-color: black;
+      padding: 5px;
+      border-bottom: 2px solid white;
+    }
+
+    .nav .name h1 {
+      color: gold;
+
+    }
 
   }
 
@@ -207,6 +222,14 @@ nav .name h1 {
   font-style: italic;
 }
 
+  /* About Mobile */
+  @media only screen and (max-width:480px) {
+    .about-container .portrait img {
+      display: none;
+    }
+
+
+  }
 
 /*Galleria Section */
 #Galleria {
@@ -309,6 +332,25 @@ nav .name h1 {
   background-size: contain;
 }
 
+  /* Galleria Mobile */
+  @media only screen and (max-width:480px) {
+    #Galleria {
+      padding: 40px 0;
+    }
+
+    #Galleria .Galleria-Text {
+      margin: 0px auto;
+      margin-bottom: 20px;
+      padding: 10px 0;
+    }
+
+    #Galleria .main-container .button-container {
+      padding: 0px;
+      padding-top: 20px;
+    }
+
+
+  }
 
 
 /* Giving Section */
@@ -349,8 +391,7 @@ nav .name h1 {
 .give-box {
   width: 290px;
   height: auto;
-  padding: 0 50px;
-  padding-top: 10px;
+  padding: 25px 50px;
   opacity: 0.4;
   margin: auto;
 }
@@ -404,6 +445,20 @@ nav .name h1 {
   border: 1px solid black;
 }
 
+  /* Giving Mobile */
+  @media only screen and (max-width:480px) {
+    #Giving .Giving-Text {
+      padding: 0;
+    }
+
+    #Giving .quote-banner {
+      margin-top: 40px;
+    }
+
+
+  }
+
+
 
 /* Contact Section */
 #Contact {
@@ -420,12 +475,6 @@ nav .name h1 {
   background-color: lightgray;
   flex-direction: column;
 }
-  /* Contact Hover */
-  #Contact .main-container:hover {
-    background-color: gray;
-    transition: 1.2s;
-    transition-timing-function: ease-in-out;
-  }
 
 .Contact-Header {
   height: 50px;
@@ -485,6 +534,12 @@ nav .name h1 {
 }
 
   /* Contact Hover */
+  #Contact .main-container:hover {
+    background-color: gray;
+    transition: 1.2s;
+    transition-timing-function: ease-in-out;
+  }
+
   .Email .Logo:hover {
     background-color: #fff176;
   }
@@ -508,6 +563,50 @@ nav .name h1 {
   }
 
 
+  /* Contact Mobile */
+  @media only screen and (max-width:480px) {
+    #Contact {
+      border: none;
+    }
+
+      /*Contact Mobile Hover */
+      #Contact .main-container:hover {
+        background-color: black;
+      }
+
+
+   }
+    #Contact .main-container {
+      background-color: black;
+    }
+
+    #Contact .social-media {
+      padding: 20px;
+    }
+
+   .Logo {
+      width: 65px;
+      height: 65px;
+      margin: 10px;
+      opacity: 0.4;
+    }
+
+    #Contact .Email .Logo {
+      background-color: #fff176;
+    }
+
+    #Contact .Instagram .Logo {
+      background-color: violet;
+    }
+
+    #Contact .Facebook .Logo {
+      background-color: navy;
+    }
+
+    #Contact .LinkedIn .Logo {
+      background-color: #0E76A8;
+    }
+  }
 
 /* Footer */
 footer {
