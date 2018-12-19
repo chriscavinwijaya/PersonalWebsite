@@ -113,6 +113,7 @@ nav .name h1 {
   font-size: 20px;
   font-weight: bold;
 }
+
  /* Nav Hover */
  .nav .button:hover {
     background-color: orange;
@@ -140,7 +141,6 @@ nav .name h1 {
 
     .nav .name h1 {
       color: gold;
-
     }
 
   }
@@ -204,11 +204,6 @@ nav .name h1 {
   height: auto;
 }
 
-  /* portrait hover */
-  .first-section .portrait:hover {
-    transform: rotate(360deg);
-  }
-
 .quote-banner {
   max-width: 100%;
   padding: 25px;
@@ -220,6 +215,11 @@ nav .name h1 {
 .quote-banner h2 {
   font-size: 20px;
   font-style: italic;
+}
+
+/* portrait hover */
+.first-section .portrait:hover {
+  transform: rotate(360deg);
 }
 
   /* About Mobile */
@@ -366,7 +366,6 @@ nav .name h1 {
       padding-top: 20px;
     }
 
-
   }
 
 
@@ -447,11 +446,6 @@ nav .name h1 {
   padding: 5px 0;
 }
 
-.give-box:hover {
-  transition: 1s;
-  opacity: 1;
-}
-
 #Giving .quote-banner {
   max-width: 100%;
   margin-top: 100px;
@@ -461,6 +455,13 @@ nav .name h1 {
   text-align: center;
   border: 1px solid black;
 }
+
+/* Giving Hover */
+.give-box:hover {
+  transition: 1s;
+  opacity: 1;
+}
+
 
   /* Giving Mobile */
   @media only screen and (max-width:480px) {
@@ -472,9 +473,7 @@ nav .name h1 {
       margin-top: 40px;
     }
 
-
   }
-
 
 
 /* Contact Section */
@@ -621,6 +620,7 @@ nav .name h1 {
     #Contact .LinkedIn .Logo {
       background-color: #0E76A8;
     }
+
   }
 
 /* Footer */
