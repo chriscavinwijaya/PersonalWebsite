@@ -125,6 +125,7 @@ nav .name h1 {
     border-bottom: 5px solid gold;
     transition: 0.4s;
   }
+  /**/
 
   /* Header Mobile */
   @media only screen and (max-width:480px) {
@@ -144,7 +145,6 @@ nav .name h1 {
     }
 
   }
-
 
 /* Main Body */
 .main-container {
@@ -217,17 +217,17 @@ nav .name h1 {
   font-style: italic;
 }
 
-/* portrait hover */
-.first-section .portrait:hover {
-  transform: rotate(360deg);
-}
+  /* portrait hover */
+  .first-section .portrait:hover {
+    transform: rotate(360deg);
+  }
+  /**/
 
   /* About Mobile */
   @media only screen and (max-width:480px) {
     .about-container .portrait img {
       display: none;
     }
-
 
   }
 
@@ -302,39 +302,40 @@ nav .name h1 {
   background-size: contain;
 }
 
-/*Button Hover Effects*/
-#Galleria .story .button:hover {
-  background-color: cyan;
-  transition: 0.8s;
-  transition-timing-function: ease-in-out;
-}
+  /*Button Hover Effects*/
+  #Galleria .story .button:hover {
+    background-color: cyan;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+  }
 
-#Galleria .galleria .button:hover {
-  background-color: orange;
-  transition: 0.8s;
-  transition-timing-function: ease-in-out;
-}
+  #Galleria .galleria .button:hover {
+    background-color: orange;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+  }
 
-#Galleria .video .button:hover {
-  background-color: red;
-  transition: 0.8s;
-  transition-timing-function: ease-in-out;
-}
+  #Galleria .video .button:hover {
+    background-color: red;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+  }
 
-#Galleria .projects .button:hover {
-  background-color: lime;
-  transition: 0.8s;
-  transition-timing-function: ease-in-out;
-}
+  #Galleria .projects .button:hover {
+    background-color: lime;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+  }
 
-#Galleria .tbd .button:hover {
-  background-color: magenta;
-  transition: 0.8s;
-  transition-timing-function: ease-in-out;
-}
+  #Galleria .tbd .button:hover {
+    background-color: magenta;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+  }
+  /**/
 
   /*Galleria 1600px Above */
-  @media only screen and (min-width:1600px) {
+  @media only screen and (min-width:1642px) {
     #Galleria .button-container {
       width: 100%;
       height: auto;
@@ -346,7 +347,6 @@ nav .name h1 {
       height: auto;
       padding: 250px 0;
     }
-
   }
 
   /* Galleria Mobile */
@@ -456,12 +456,12 @@ nav .name h1 {
   border: 1px solid black;
 }
 
-/* Giving Hover */
-.give-box:hover {
-  transition: 1s;
-  opacity: 1;
-}
-
+  /* Giving Hover */
+  .give-box:hover {
+    transition: 1s;
+    opacity: 1;
+  }
+  /**/
 
   /* Giving Mobile */
   @media only screen and (max-width:480px) {
@@ -577,7 +577,7 @@ nav .name h1 {
     transition-timing-function: ease-in-out;
     opacity: 1;
   }
-
+  /**/
 
   /* Contact Mobile */
   @media only screen and (max-width:480px) {
@@ -589,7 +589,7 @@ nav .name h1 {
       #Contact .main-container:hover {
         background-color: black;
       }
-
+      /**/
     #Contact .main-container {
       background-color: black;
     }
