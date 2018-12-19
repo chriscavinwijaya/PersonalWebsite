@@ -588,17 +588,22 @@ nav .name h1 {
       border: none;
     }
 
-      /*Contact Mobile Hover */
-      #Contact .main-container:hover {
-        background-color: black;
-      }
-      /**/
+    #Contact .contact-content {
+      padding: 25px 3px;
+      padding-top: 10px;
+    }
+
+    .contact-content .text {
+      padding-bottom: 5px;
+    }
+
     #Contact .main-container {
       background-color: black;
     }
 
     #Contact .social-media {
-      padding: 20px;
+      width: 100%;
+      padding: 20px 0;
     }
 
    .Logo {
@@ -624,6 +629,11 @@ nav .name h1 {
       background-color: #0E76A8;
     }
 
+    /*Contact Mobile Hover */
+    #Contact .main-container:hover {
+      background-color: black;
+    }
+    /**/
   }
 
 /* Footer */
