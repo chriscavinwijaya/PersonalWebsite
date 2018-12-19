@@ -262,7 +262,7 @@ nav .name h1 {
 #Galleria .button-container {
   width: 100%;
   height: auto;
-  padding: 250px 0;
+  padding: 100px 0 60px 0;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -280,36 +280,6 @@ nav .name h1 {
   background-repeat: no-repeat;
   background-color: white;
 }
-  /*Button Hover Effects*/
-  #Galleria .story .button:hover {
-    background-color: cyan;
-    transition: 0.8s;
-    transition-timing-function: ease-in-out;
-  }
-
-  #Galleria .galleria .button:hover {
-    background-color: orange;
-    transition: 0.8s;
-    transition-timing-function: ease-in-out;
-  }
-
-  #Galleria .video .button:hover {
-    background-color: red;
-    transition: 0.8s;
-    transition-timing-function: ease-in-out;
-  }
-
-  #Galleria .projects .button:hover {
-    background-color: lime;
-    transition: 0.8s;
-    transition-timing-function: ease-in-out;
-  }
-
-  #Galleria .tbd .button:hover {
-    background-color: magenta;
-    transition: 0.8s;
-    transition-timing-function: ease-in-out;
-  }
 
 .story .button {
   background-image: url("../images/Story-Logo.png");
@@ -331,6 +301,53 @@ nav .name h1 {
   background-image: url("../images/Question-Logo.png");
   background-size: contain;
 }
+
+/*Button Hover Effects*/
+#Galleria .story .button:hover {
+  background-color: cyan;
+  transition: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+#Galleria .galleria .button:hover {
+  background-color: orange;
+  transition: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+#Galleria .video .button:hover {
+  background-color: red;
+  transition: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+#Galleria .projects .button:hover {
+  background-color: lime;
+  transition: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+#Galleria .tbd .button:hover {
+  background-color: magenta;
+  transition: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+  /*Galleria 1600px Above */
+  @media only screen and (min-width:1600px) {
+    #Galleria .button-container {
+      width: 100%;
+      height: auto;
+      padding: 250px 0;
+    }
+
+    #Galleria .main-container .button-container {
+      width: 100%;
+      height: auto;
+      padding: 250px 0;
+    }
+
+  }
 
   /* Galleria Mobile */
   @media only screen and (max-width:480px) {
@@ -574,8 +591,6 @@ nav .name h1 {
         background-color: black;
       }
 
-
-   }
     #Contact .main-container {
       background-color: black;
     }
