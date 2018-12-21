@@ -236,6 +236,11 @@ nav .name h1 {
     .p p {
       font-size: 16px;
     }
+
+    .text .first-section {
+      margin: 0 5%;
+    }
+
   }
 
 /*Galleria Section */
@@ -704,6 +709,6 @@ footer a {
   /* Footer Mobile */
   @media only screen and (max-width: 480px) {
     footer p {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
