@@ -30,7 +30,7 @@ p {
 
 /* Header Section */
 .body {
-  width: 1280px;
+  max-width: 1280px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -39,8 +39,6 @@ p {
 header {
   height: 100%;
 }
-
-
 
 /* Nav Section */
 .nav {
@@ -104,28 +102,31 @@ nav a {
   background-color: #FFF;
   }
 
-@media only screen and (max-width:1049px) {
-  .video {
-  position:relative;
-  padding-bottom:56.25%;
-  padding-top:30px;
-  height:0;
-  overflow:hidden;
-  }
-
-  .video iframe, .video object, .video embed {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  }
-}
-
   /* Video Mobile */
+  @media only screen and (max-width:1049px) {
+    .video {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+    }
+
+    .video iframe, .video object, .video embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    }
+  }
+
   @media only screen and (max-width:480px) {
     #video.main-container {
-      padding: 15px 0;
+      padding: 0;
+    }
+    .video {
+      margin: 0 auto;
     }
   }
 
@@ -158,7 +159,13 @@ nav a {
 .carousel .carousel-item {
   max-width: 800px;
   margin: 0 auto;
+  transition: none;
 }
+
+/*.carousel-inner .active {
+  transition: opacity 0.1s linear;
+  opacity: 1;
+}*/
 
 .w-100 {
   width: auto!important;
@@ -203,6 +210,9 @@ nav a {
     .work-showcase h1{
       font-size: 40px;
       border: 0;
+    }
+    .carousel-inner .sketch img{
+      height: 270px;
     }
   }
 
@@ -302,9 +312,9 @@ body .thermometer {
       padding-bottom: 0;
     }
 
-    .statistics {
-      padding-top: 50px;
-      padding-bottom: 50px;
+    .thermometer .statistics {
+      padding-top: 30px;
+      padding-bottom: 5px;
     }
 
     .statistics h1 {
@@ -313,12 +323,14 @@ body .thermometer {
 
     #countdown-wrap {
       height: 220px;
-      padding: 25px 20px 0 20px;
+      padding: 35px 20px 0 20px;
 
     }
 
     #goal {
       font-size: 22px;
+      padding-bottom: 25px;
+      padding-right: 10px;
     }
 
     .goal-stat {
@@ -359,11 +371,12 @@ body .thermometer {
 
   /* Donation Mobile */
   @media only screen and (max-width:480px) {
-    .donation {
-      padding: 5px 10px;
+    .main-container.donation {
+      padding: 10px;
       height: 100px;
-      margin: 15px 7px;
-      margin-top: 25px;
+      margin: 0px;
+      border-radius: 0px;
+      border: none;
     }
     .donation h1 {
       font-size: 60px;
@@ -405,7 +418,7 @@ body .thermometer {
   /* Share Mobile */
   @media only screen and (max-width:480px) {
     .share {
-      padding: 40px 0;
+      padding: 35px 0;
       padding-bottom: 0;
     }
     .share h1 {
@@ -591,6 +604,7 @@ footer {
   padding-top: 1%;
   padding-bottom: 0.5%;
   background-color: white;
+  padding-left: 10px;
 }
 
 footer p {
