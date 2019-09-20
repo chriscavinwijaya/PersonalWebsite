@@ -46,7 +46,7 @@ header {
 }
 
 nav {
-  max-width: 100%;
+  width: 100%;
   flex-direction: row;
   justify-content: space-around;
   background-color: none;
