@@ -372,8 +372,8 @@ body .thermometer {
   /* Donation Mobile */
   @media only screen and (max-width:480px) {
     .main-container.donation {
-      padding: 10px;
-      height: 100px;
+      padding: 20px;
+      height: 120px;
       margin: 0px;
       border-radius: 0px;
       border: none;
@@ -418,7 +418,7 @@ body .thermometer {
   /* Share Mobile */
   @media only screen and (max-width:480px) {
     .share {
-      padding: 35px 0;
+      padding: 40px 0;
       padding-bottom: 0;
     }
     .share h1 {
@@ -427,6 +427,9 @@ body .thermometer {
     .share h2 {
       font-size: 20px;
       padding: 10px 40px;
+    }
+    .share .share-buttons {
+      padding-left: 20px;
     }
   }
 
