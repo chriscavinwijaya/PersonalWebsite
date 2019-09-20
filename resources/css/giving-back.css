@@ -46,7 +46,7 @@ header {
 }
 
 nav {
-  width: 100%;
+  max-width: 100%;
   flex-direction: row;
   justify-content: space-around;
   background-color: none;
@@ -90,7 +90,7 @@ nav a {
 
 /* Video Section */
 #video.main-container {
-  width: 100%;
+  max-width: 100%;
   background-color: #FFF;
   padding: 30px 0;
 }
@@ -599,7 +599,7 @@ body .thermometer {
 
 /* Footer */
 footer {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding-top: 1%;
   padding-bottom: 0.5%;
