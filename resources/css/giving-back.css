@@ -587,7 +587,7 @@ body .thermometer {
   /**/
 
   /* Contact Mobile */
-  @media only screen and (max-width:480px) {
+  @media only screen and (max-width:545px) {
     #Contact {
       border: none;
     }
