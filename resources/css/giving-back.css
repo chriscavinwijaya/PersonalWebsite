@@ -1,6 +1,7 @@
-/* Universal Styles */
+  /* Universal Styles */
 * {
  font-size: 12px;
+ font-family: 'Vollkorn SC', serif;
 }
 
 div {
@@ -18,6 +19,10 @@ a {
 
 p {
   font-size: 20px;
+}
+
+h1, h2, h3, span {
+  font-family: 'Vollkorn SC', serif;
 }
 
 .bold {
@@ -79,11 +84,10 @@ nav a {
 .Project-Title h1 {
   color: yellow;
   font-size: 35px;
-  font-family: sans-serif;
 }
 
   /* Nav Mobile */
-  @media only screen and (max-width:480px) {
+  @media only screen and (max-width:545px) {
     .Project-Title h1 {
       font-size: 25px;
     }
@@ -93,13 +97,14 @@ nav a {
 #video.main-container {
   max-width: 100%;
   background-color: #FFF;
-  padding: 30px 0;
+  padding: 20px;
+  background-color: black;
 }
 
 .video {
-  max-width: 1200px;
+  max-width: 100%;
   height: 700px;
-  margin: 25px auto;
+  margin: 0 auto;
   background-color: #FFF;
   }
 
@@ -122,7 +127,7 @@ nav a {
     }
   }
 
-  @media only screen and (max-width:480px) {
+  @media only screen and (max-width:545px) {
     #video.main-container {
       padding: 0;
     }
@@ -149,7 +154,6 @@ nav a {
   font-size: 60px;
   color: #FFF;
   text-align: center;
-  font-family: 'Nunito', sans-serif;
 }
 
 .carousel {
@@ -198,7 +202,7 @@ nav a {
 }
 
   /* Showcase Mobile */
-  @media only screen and (max-width:480px) {
+  @media only screen and (max-width:545px) {
     .showcase {
       padding-top: 0;
     }
@@ -211,6 +215,7 @@ nav a {
     .work-showcase h1{
       font-size: 40px;
       border: 0;
+      text-decoration: underline;
     }
     .carousel-inner .sketch img{
       height: 270px;
@@ -308,7 +313,7 @@ body .thermometer {
 }
 
   /* Thermometer Mobile */
-  @media only screen and (max-width:480px) {
+  @media only screen and (max-width:545px) {
     body .thermometer {
       padding-bottom: 0;
     }
@@ -320,6 +325,7 @@ body .thermometer {
 
     .statistics h1 {
       font-size: 50px;
+      text-decoration: underline;
     }
 
     #countdown-wrap {
@@ -329,9 +335,12 @@ body .thermometer {
     }
 
     #goal {
-      font-size: 22px;
       padding-bottom: 25px;
       padding-right: 10px;
+    }
+
+    #goal .current {
+      font-size: 32px;
     }
 
     .goal-stat {
@@ -339,14 +348,14 @@ body .thermometer {
     }
 
     .goal-stat span {
-      font-size: 15px;
+      font-size: 14px;
     }
   }
 
 /* Donation Section */
 .donation {
   max-width: 100%;
-  height: 180px;
+  height: auto;
   margin: 0 auto;
   margin: 15px;
   padding: 30px 0;
@@ -363,23 +372,59 @@ body .thermometer {
   padding: 20px;
 }
 
+.donations .image-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.donations img {
+  width: 250px;
+}
+
 .donations h1 {
   text-align: center;
   font-size: 70px;
   font-weight: bold;
-  padding-top: 20px;
 }
 
+  /* Donation Hover */
+  .donation:hover {
+    background-color: white;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+  .donation a:hover {
+    transition: 0.5s;
+  }
+
   /* Donation Mobile */
+  @media only screen and (min-width:481px) {
+    .donation {
+      background-image: url('../images/donate-background.png');
+      background-repeat: repeat;
+      background-size: contain;
+    }
+    .donation img {
+      display: none;
+    }
+
+  }
+
   @media only screen and (max-width:480px) {
     .main-container.donation {
-      padding: 20px;
-      height: 120px;
-      margin: 0px;
-      border-radius: 0px;
-      border: none;
+      padding: 2px;
+      height: 150px;
+      margin: 15px;
+      border-radius: 20px;
+      border: 3px solid black;
+    }
+    .donation img {
+      width: 130px;
+      padding: 5px 0;
+      padding-left: 5px;
     }
     .donation h1 {
+      display: none;
       font-size: 60px;
       padding: 10px 0;
     }
@@ -388,7 +433,7 @@ body .thermometer {
 /* Share Section */
 .share {
   max-width: 100%;
-  height: 250px;
+  height: 270px;
   margin: 0 auto;
   text-align: center;
   padding: 35px 0;
@@ -412,18 +457,20 @@ body .thermometer {
 }
 
 .share h2 {
-  padding: 10px;
+  padding: 20px;
   font-size: 20px;
 }
 
   /* Share Mobile */
   @media only screen and (max-width:480px) {
     .share {
-      padding: 40px 0;
+      height: 220px;
+      padding: 20px 0;
       padding-bottom: 0;
     }
     .share h1 {
       font-size: 50px;
+      text-decoration: underline;
     }
     .share h2 {
       font-size: 20px;
@@ -608,7 +655,7 @@ footer {
   padding-top: 1%;
   padding-bottom: 0.5%;
   background-color: white;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 footer p {
