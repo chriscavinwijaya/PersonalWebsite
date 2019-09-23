@@ -167,6 +167,13 @@ nav a {
   transition: none;
 }
 
+.carousel-item .carousel-heading {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 /*.carousel-inner .active {
   transition: opacity 0.1s linear;
   opacity: 1;
@@ -216,6 +223,9 @@ nav a {
       font-size: 40px;
       border: 0;
       text-decoration: underline;
+    }
+    .carousel {
+      padding-top: 10px;
     }
     .carousel-inner .sketch img{
       height: 270px;
